@@ -1,0 +1,61 @@
+h1{
+    color : rgb(255, 0, 0) ;
+    text-align: center;
+    font-size: 18px ;
+    border:1px solid brown;
+ 
+}
+h1:hover{ /* esto es para ponerle propiedades mientras el raton esté arriba*/
+          /*las pseudoclases usan 2 puntos */
+    color: pink;
+    background-color: brown;
+
+}
+h2{
+    color:blue;
+    text-align: right;
+    font-size: 16px;
+    text-decoration: underline 2px solid rebeccapurple
+
+}
+a{
+    color:inherit;
+}
+h4:target{ /*esto es para que cambie las propiedades del elemento objetivo de un imppervinculo cuando lo usas*/
+    color: red;
+}
+
+h1:active{
+
+    border-bottom: black solid;
+    border-right:black solid;
+
+}
+
+/* por defecto en el navegador viene esto:
+a:link{
+color: red
+}
+a:visited{
+color purlple}
+
+estos lo que hacen es el color de los links y cambiarlo cuando lo pinchas
+
+li:active{
+background:color red
+}
+
+esto lo que hace es cambiar las propiedades cuando le mantienes precionado el click al elemento
+
+
+para poder cambiar el primer y segundo parrafo 
+p:first-child{}
+p:last-child{}
+p:nth-child(2){}
+
+se usa para cambiar las propiedades de los elementos hijos
+*/
+
+
+
+

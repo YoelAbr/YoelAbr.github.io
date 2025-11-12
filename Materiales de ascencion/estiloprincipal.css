@@ -30,7 +30,9 @@ padding: 10px 0 ;
 border-bottom: solid 1px rgb(73, 73, 73);
 border-right: solid 1px rgb(73, 73, 73);
 }
-
+a{
+   
+}
 
 li:hover{
     background-color: rgb(73, 73, 73);
