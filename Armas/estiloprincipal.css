@@ -1,0 +1,41 @@
+body{
+ border:  1px black;
+    border-style: solid;
+    
+    margin: auto;
+
+
+}
+
+h1{
+    background-color: black;
+    color: white;
+    border-bottom: 20px rgb(73, 73, 73) solid;
+    margin: 0;
+    padding-top: 30px ;
+    text-align: center;
+}
+ol{
+    font-size: 0px;
+    padding: 0%;
+}
+li{
+
+color: black ;
+display: inline-block;
+width: 24.89%;
+text-align: center;
+font-size: 10px;
+padding: 10px 0 ;
+border-bottom: solid 1px rgb(73, 73, 73);
+border-right: solid 1px rgb(73, 73, 73);
+
+
+}
+
+li:hover{
+    background-color: rgb(73, 73, 73);
+    color: white;
+}
+div{
+    font-size: 16px;}

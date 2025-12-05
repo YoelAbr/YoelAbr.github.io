@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(64, 64, 64);
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-attachment: fixed; /* ¡La clave! Fija el fondo al viewport */
+
+}
+
+body > img:first-child{ box-shadow: black 10px ; }
+
+main{
+    width: 60%;
+    text-align: left;
+}
+
+h1{
+    color : rgb(255, 255, 255) ;
+    text-align: center;
+    font-size: 18px ;
+    border:1px solid rgb(255, 255, 255);
+ 
+}
+h1:hover{ /* esto es para ponerle propiedades mientras el raton esté arriba*/
+          /*las pseudoclases usan 2 puntos */
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+
+}
+h2{
+    color:rgb(255, 255, 255);
+    
+    font-size: 16px;
+    text-decoration: underline 2px solid rebeccapurple
+
+}
+a{
+    color:inherit;
+}
+h3:target{ /*esto es para que cambie las propiedades del elemento objetivo de un imppervinculo cuando lo usas*/
+    color: rgb(255, 255, 255);
+}
+
+h1:active{
+
+    border-bottom: rgb(255, 255, 255) solid;
+    border-right:rgb(255, 255, 255) solid;
+
+}
+h3{ color: white;}
+h1, li{ color: white;}
+
+article{
+    border: white solid 3px;
+    box-shadow: 40px rgb(44, 44, 44);
+    background-color: rgb(34, 34, 34);
+    border-radius: 5px;
+    margin-bottom: 10px;
+   
+}
+article > p{ color: white;}
+
+table{
+    border: white solid 1px;
+    border-radius: 5px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+tr, th {
+    border:  white solid 1px;
+     border-collapse: collapse;
+     color: white;
+     padding-bottom: 10px;
+}
+
+/* por defecto en el navegador viene esto:
+a:link{
+color: red
+}
+a:visited{
+color purlple}
+
+estos lo que hacen es el color de los links y cambiarlo cuando lo pinchas
+
+li:active{
+background:color red
+}
+
+esto lo que hace es cambiar las propiedades cuando le mantienes precionado el click al elemento
+
+
+para poder cambiar el primer y segundo parrafo 
+p:first-child{}
+p:last-child{}
+p:nth-child(2){}
+
+se usa para cambiar las propiedades de los elementos hijos
+*/
+
+
+
+
