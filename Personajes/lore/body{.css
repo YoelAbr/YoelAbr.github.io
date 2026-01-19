@@ -73,6 +73,11 @@ tr, th {
 p{
     color: white;
     text-align: left;
+    border: white solid 3px;
+    box-shadow: 40px rgb(44, 44, 44);
+    background-color: rgb(34, 34, 34);
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 /* por defecto en el navegador viene esto:
