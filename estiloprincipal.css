@@ -45,18 +45,32 @@ li:hover{
 div{
     font-size: 16px;}
 
-    section { text-align: center;}
+    section { text-align: center;
+    width: 100%;
+    position: relative;
+    left: 930px;}
 
 article{
     border: white solid 3px;
     box-shadow: 40px rgb(44, 44, 44);
-    background-color: rgb(34, 34, 34);
+    background-color: rgba(34, 34, 34, 0.5);
     border-radius: 5px;
     margin-bottom: 10px;
     
     width: 40%;
-    display: inline-block;
+    display: block;
     text-align: center;
+    position: relative;
+    right: 50px;
+
    
 }
 article > p{ color: white;}
+
+.video-fondo {
+    position: fixed;
+    width: 100%;
+    z-index: -1; /* Envía el video al fondo */
+    object-fit: cover; /* Ajusta el video sin deformarlo */
+}
+
