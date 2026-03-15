@@ -1,6 +1,10 @@
 body{
     margin: auto;
     background-color: rgb(45, 45, 45);
+    display: flexbox;
+    background-image: url(Imagenes/multimedia/250bfd73f4a3f1ed61ea181ac92a69b8.gif) ;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1{
@@ -23,7 +27,7 @@ ul{
     font-size: 0px;
     list-style: none;
     padding: 0%;
-   -width: 100%;
+    width: 100%;
 }
 li{
 
@@ -45,10 +49,9 @@ li:hover{
 div{
     font-size: 16px;}
 
-    section { text-align: center;
+section { text-align: center;
     width: 100%;
-    position: relative;
-    left: 930px;}
+    }
 
 article{
     border: white solid 3px;
@@ -56,14 +59,9 @@ article{
     background-color: rgba(34, 34, 34, 0.5);
     border-radius: 5px;
     margin-bottom: 10px;
-    
     width: 40%;
     display: block;
     text-align: center;
-    position: relative;
-    right: 50px;
-
-   
 }
 article > p{ color: white;}
 
@@ -74,3 +72,38 @@ article > p{ color: white;}
     object-fit: cover; /* Ajusta el video sin deformarlo */
 }
 
+
+@media(max-width: 720px){
+
+body{
+    background-image: url(Imagenes/multimedia/WhatsApp\ Image\ 2026-03-15\ at\ 18.21.46.jpeg) ;
+    background-attachment:scroll;
+}
+
+ul{
+    font-size: 0px;
+    padding: 0%;
+    width: 100%;
+}
+li{
+
+color: black ;
+width: 49.8563456%;
+text-align: center;
+font-size: 10px;
+padding: 10px 0 ;
+border-bottom: solid 1px rgb(73, 73, 73);
+border-right: solid 1px rgb(73, 73, 73);
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+
+li:hover{
+    background-color: rgb(73, 73, 73);
+    color: white;}
+ 
+
+
+}
