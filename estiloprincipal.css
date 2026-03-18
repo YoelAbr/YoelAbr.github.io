@@ -1,7 +1,7 @@
 body{
     margin: auto;
     background-color: rgb(45, 45, 45);
-    display: flexbox;
+    
     background-image: url(Imagenes/multimedia/250bfd73f4a3f1ed61ea181ac92a69b8.gif) ;
     background-size: cover;
     background-attachment: fixed;
@@ -21,7 +21,10 @@ h2,h3{
     border-bottom: 5px rgb(73, 73, 73) solid;
     margin: 0;
     padding-top: 10px ;
-    text-align: center;}
+    text-align: center;
+    
+}
+    
 
 ul{
     font-size: 0px;
@@ -41,6 +44,10 @@ border-bottom: solid 1px rgb(73, 73, 73);
 border-right: solid 1px rgb(73, 73, 73);
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 
 li:hover{
     background-color: rgb(73, 73, 73);
@@ -50,7 +57,9 @@ div{
     font-size: 16px;}
 
 section { text-align: center;
-    width: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
     }
 
 article{
@@ -59,18 +68,41 @@ article{
     background-color: rgba(34, 34, 34, 0.5);
     border-radius: 5px;
     margin-bottom: 10px;
-    width: 40%;
     display: block;
     text-align: center;
 }
 article > p{ color: white;}
 
-.video-fondo {
-    position: fixed;
+div>span>img{
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    padding-bottom: 2.4%;
+    padding-top: 2.4%;
     width: 100%;
-    z-index: -1; /* Envía el video al fondo */
-    object-fit: cover; /* Ajusta el video sin deformarlo */
+
 }
+.top{
+
+    width: 30%;
+}
+.top{
+    border: white solid 3px;
+    box-shadow: 40px rgb(44, 44, 44);
+    background-color: rgba(34, 34, 34, 0.5);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
 
 
 @media(max-width: 720px){
@@ -80,6 +112,12 @@ body{
     background-attachment:scroll;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Menu*/
 ul{
     font-size: 0px;
     padding: 0%;
@@ -88,7 +126,7 @@ ul{
 li{
 
 color: black ;
-width: 49.8563456%;
+width: 49.8%;
 text-align: center;
 font-size: 10px;
 padding: 10px 0 ;
@@ -99,11 +137,65 @@ flex-wrap: wrap;
 
 }
 
+a{
+    color: black;
+}
 
 li:hover{
     background-color: rgb(73, 73, 73);
     color: white;}
- 
 
+ /*Lista de personajes*/
+
+section { 
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    }
+
+article{
+    border: white solid 3px;
+    box-shadow: 40px rgb(44, 44, 44);
+    background-color: rgba(34, 34, 34, 0.5);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block; 
+    text-align: center;
+    width: 100%;
+}
+article > p{ color: white;}
+
+h3,h2{
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: white;
+    border-bottom: 5px rgb(73, 73, 73) solid;
+    margin: 0;
+    padding-top: 10px ;
+    text-align: center;}
+
+    h1{
+    background-color: rgb(90, 90, 90);
+    color: white;
+    border-bottom: 20px rgb(73, 73, 73) solid;
+    margin: 0;
+    padding-top: 30px ;
+    text-align: center;
+
+    
+
+
+}
+
+
+
+    .top{
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 420px){
+     /*no hay fondos para esta resolucion*/
+    
 
 }
